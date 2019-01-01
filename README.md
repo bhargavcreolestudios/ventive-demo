@@ -15,7 +15,7 @@ This README would normally document whatever steps are necessary to get your app
 - Clone this repo or download it's release archive and extract it somewhere
 - You may delete .git folder if you get this code via git clone
 - Run ```npm install``` OR ```yarn install``` in `react-app` directory (to install packages for you project)
-- Run ```composer install`` in `lumen-app` directory (to install packages dependancies of lumen-app)
+- Run ```composer install``` in `lumen-app` directory (to install packages dependancies of lumen-app)
 - Run migration and seeder for lumen-app by `php artisan migrate --seed`
 - Seeder will create user account with `123456` password, refer user table and use email and mentioned password for login
 - In case of issues with migration and seeder, please find `.sql` file inside `database` folder on root.
