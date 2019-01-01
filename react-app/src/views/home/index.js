@@ -1,7 +1,6 @@
 import React from 'react'
-import {Container, Header, Divider, Table, Button, Icon, Modal, Form, Input, Dropdown, Grid, Label, Card, Confirm, Search, Pagination} from 'semantic-ui-react'
+import {Container, Header, Divider, Table, Button, Icon, Modal, Form, Input, Dropdown, Grid, Confirm} from 'semantic-ui-react'
 import {getProducts, getCategories, AddNewProduct, updateProduct, deleteProduct} from '../../api'
-import {Link} from 'react-router-dom'
 import _ from 'lodash'
 class Home extends React.Component {
   constructor(props) {
@@ -12,7 +11,6 @@ class Home extends React.Component {
       modalOpen:false,
       editProduct:{},
       product:{},
-      viewModal:false,
       delete_id:null,
       confirmation:false
     }
@@ -107,8 +105,7 @@ class Home extends React.Component {
   _viewProduct = (key)=>{
     let products = JSON.parse(JSON.stringify(this.state.products))
     this.setState({
-      product:products[key],
-      viewModal:true
+      product:products[key]
     })
   }
 
@@ -142,7 +139,7 @@ class Home extends React.Component {
   }
 
   render() {
-    const {products, categories, modalOpen, editProduct, viewModal, confirmation} = this.state
+    const {products, categories, modalOpen, editProduct, confirmation} = this.state
     return(
       <Container>
       <Header size='huge' style={{marginTop:'10px'}}>Products</Header>
@@ -227,6 +224,7 @@ class Home extends React.Component {
         }
       })
     }
+
     </Table.Body>
     </Table>
     <Grid.Column>
