@@ -12,7 +12,7 @@ This README would normally document whatever steps are necessary to get your app
 
 **Summary of set up**
 
-- Clone this repo or download it's release archive and extract it somewhere
+- Clone this repo or download it's release archive and extract it somewhere. Prefer location would be /var/www/html folder on ubuntu, www directory on WAMP, htdocs directory on XAMPP.
 - You may delete .git folder if you get this code via git clone
 - Run ```npm install``` OR ```yarn install``` in `react-app` directory (to install packages for you project)
 - Run ```composer install``` in `lumen-app` directory (to install packages dependancies of lumen-app)
@@ -29,6 +29,6 @@ This README would normally document whatever steps are necessary to get your app
 
 
 **Server startup:**
-- to start lumen server, go to `lumen-app` directory by terminal and fire `php -S localhost:8000 -t public` so your lumen-app server will be started.
+- To start lumen server, go to `lumen-app` directory by terminal and run `php -S localhost:8000 -t public`.
 - Run ```npm start``` OR ```yarn start```  in your `react-app` directory (to run project)
-- than you can locate your project at `http://localhost:3000`
+- React will be run on `http://localhost:3000`
